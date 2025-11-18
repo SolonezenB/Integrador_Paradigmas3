@@ -1,0 +1,86 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5dc;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #carrito-contenido {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #d59c51;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    button {
+      background-color: #d2b48c;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #cba46d;
+    }
+
+    #btn-comprar {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #btn-comprar:hover {
+      background-color: #388E3C;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .btn-back { 
+  position: fixed; 
+  top: 15px; 
+  left: 15px; 
+  padding: 8px 16px; 
+  background: #D2B48C; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  transition: background 0.3s; 
+} 
+.btn-back:hover { background: #d59c51; } 

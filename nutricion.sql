@@ -1,0 +1,34 @@
+CREATE database nutricion;
+use nutricion;
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+CREATE TABLE productos (
+  id_producto INT AUTO_INCREMENT PRIMARY KEY,
+  tipo VARCHAR(50) NOT NULL,
+  precio DECIMAL(10,2) NOT NULL,
+  stock INT NOT NULL
+);
+ALTER TABLE productos ADD COLUMN imagen VARCHAR(255) DEFAULT 'imagenes/suplemento.png';
+CREATE TABLE admins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  usuario VARCHAR(50) UNIQUE NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+CREATE TABLE compras (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  direccion VARCHAR(255) NOT NULL,
+  telefono VARCHAR(20) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  pago VARCHAR(50) NOT NULL,
+  productos TEXT NOT NULL,
+  fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+ALTER TABLE compras
+ADD COLUMN estado VARCHAR(50) DEFAULT 'Pendiente';
+
+

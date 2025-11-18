@@ -1,65 +1,100 @@
 body {
-            font-family: Arial, sans-serif;
-            background: #F5DEB3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .form-container {
-            background: #fff;
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 300px;
-        }
-        img {
-            border-radius: 40%;
-            max-width: 20%;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-        input, button {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #D2B48C;
-            color: #fff;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #e79428;
-        }
-        .error {
-            color: red;
-            font-size: 14px;
-            margin-top: 8px;
-        }
-        .btn-back { 
-            position: fixed; /* Siempre visible */ 
-            top: 15px; /* Distancia desde arriba */ 
-            left: 15px; /* Distancia desde la izquierda */ 
-            padding: 8px 16px; 
-            background: #D2B48C; 
-            color: white; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            font-size: 14px; 
-            transition: background 0.3s; } 
-            .btn-back:hover { background: #d59c51; }
+    font-family: Arial, sans-serif;
+    background: #F5DEB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Hacemos que solo los inputs tengan 100% de ancho */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* El botón de 'Ingresar' ocupa todo el ancho del formulario (300px) */
+button {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #D2B48C;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #b99161;
+}
+
+/* El botón '.btn-back' se ajusta a su contenido y se fija en la esquina */
+.btn-back {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    /* Las propiedades clave para limitar el ancho: */
+    width: auto; 
+    display: inline-block;
+    
+    padding: 5px 10px; 
+    background: #D2B48C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.btn-back:hover {
+    background: #b99161;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #D2B48C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
